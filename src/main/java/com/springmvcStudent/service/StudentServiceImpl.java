@@ -22,14 +22,14 @@ private StudentDao studentdao;
 	}
 
 	
-//	//get
-//	@Override
-//	public Student getStudent(long studentId) {
-//		
-//		return studentdao.getOne(studentId);
-//	
-//	}
-//	
+	//get
+	@Override
+	public Student getStudent(long studentId) {
+		
+		return studentdao.getOne(studentId);
+	
+	}
+	
 	 
 	
 

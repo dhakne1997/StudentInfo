@@ -11,7 +11,7 @@ public interface StudentService {
 
 	public Student addStudent(Student student);
 
-	//public Student getStudent(long studentId);
+	public Student getStudent(long studentId);
 
 	public Student updateStudent(Student student);
 }
