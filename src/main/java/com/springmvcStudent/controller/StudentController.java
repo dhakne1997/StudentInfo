@@ -7,12 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springmvcStudent.model.Student;
 import com.springmvcStudent.service.StudentService;
 
 @RestController
+@RequestMapping("/api")
 public class StudentController {
 	
 @Autowired 
@@ -21,6 +24,7 @@ public class StudentController {
 	//get StudentDetails
 
 	@GetMapping("/stu")
+	@RequestMapping(method = RequestMethod.GET, value = "/stu")
 	public List<Student>getStudent()
 	{
 		return this.studentservice.getStudent();

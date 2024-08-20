@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="stujpa")
+@Table(name="studentjpa" )
 public class Student {
 @Id
 	private Long roll_no;
